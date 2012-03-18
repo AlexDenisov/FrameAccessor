@@ -1,0 +1,16 @@
+Easy access to view's frame.
+
+Use
+
+view.x = 15;
+view.width = 167;
+
+instead
+
+CGRect newFrame = view.frame;
+newFrame.origin.x = 15;
+newFrame.size.width = 167;
+view.frame = newFrame;
+
+You can access x, y, width, height, origin or size like properties.
+
