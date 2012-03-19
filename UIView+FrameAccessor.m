@@ -64,7 +64,7 @@
     return self.frame.size.width;
 }
 
-- (void)setIwdth:(CGFloat)newWidth {
+- (void)setWidth:(CGFloat)newWidth {
     CGRect newFrame = self.frame;
     newFrame.size.width = newWidth;
     self.frame = newFrame;
