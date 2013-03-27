@@ -1,8 +1,8 @@
 # FrameAccessor
 
-### Easy way to access view's frame in iOS and OSX.
+Easy way to access view's frame in iOS and OSX.
 
-## Usage
+Use
 
 ```cpp
 view.x = 15;
