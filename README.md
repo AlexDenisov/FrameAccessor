@@ -1,6 +1,8 @@
-Easy access to view's frame.
+# FrameAccessor
 
-Use
+# Easy way to access view's frame.
+
+## Usage
 
 view.x = 15;
 view.width = 167;
