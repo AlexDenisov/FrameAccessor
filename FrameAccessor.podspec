@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   }
   s.author   = { "holgersindbaek" => "holgersindbaek@gmail.com" }
   s.source   = { :git => 'https://github.com/holgersindbaek/FrameAccessor.git', :tag => s.version.to_s}
-  s.platform = :osx, :ios
+  s.ios.deployment_target = '5.0'
+  s.osx.deployment_target = '10.6'
   s.source_files = 'FrameAccessor.{h,m}'
 end
