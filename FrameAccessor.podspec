@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = "FrameAccessor"
   s.version      = "1.0.0"
-  s.platform     = :ios, '4.3'
-  s.license      = 'LICENSE'
+  s.platform     = :OSX, '10.6'
+  s.license      = 'BSD'
   s.summary      = "This version of frameaccessor also works with OSX."
   s.homepage     = "http://EXAMPLE/FrameAccessor"
   s.requires_arc = true
