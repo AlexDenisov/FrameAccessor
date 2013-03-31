@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 CoreInvader. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 #if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
+    #import <UIKit/UIKit.h>
     #define View UIView
 #else
+    #import <Foundation/Foundation.h>
     #define View NSView
 #endif
 
