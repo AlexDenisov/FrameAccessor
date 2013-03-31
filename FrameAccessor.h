@@ -1,5 +1,5 @@
 //
-//  UIView+FrameAccessor.h
+//  FrameAccessor.h
 //  FrameAccessor
 //
 //  Created by Alex Denisov on 18.03.12.
@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSView (FrameAccessor)
+#if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
+    #define View UIView
+#else
+    #define View NSView
+#endif
+
+@interface View (FrameAccessor)
 
 - (CGPoint)origin;
 - (void)setOrigin:(CGPoint)newOrigin;

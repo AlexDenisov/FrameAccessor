@@ -1,6 +1,6 @@
 # FrameAccessor
 
-Easy way to access view's frame. Now also works for OSX.
+Easy way to access view's frame in iOS and OSX.
 
 Use
 

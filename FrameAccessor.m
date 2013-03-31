@@ -1,14 +1,14 @@
 //
-//  UIView+FrameAccessor.m
+//  FrameAccessor.m
 //  FrameAccessor
 //
 //  Created by Alex Denisov on 18.03.12.
 //  Copyright (c) 2012 CoreInvader. All rights reserved.
 //
 
-#import "NSView+FrameAccessor.h"
+#import "FrameAccessor.h"
 
-@implementation NSView (FrameAccessor)
+@implementation View (FrameAccessor)
 
 - (CGPoint)origin {
     return self.frame.origin;
