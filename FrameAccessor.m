@@ -1,17 +1,17 @@
 //
-//  UIView+FrameAccessor.m
+//  FrameAccessor.m
 //  FrameAccessor
 //
 //  Created by Alex Denisov on 18.03.12.
 //  Copyright (c) 2012 CoreInvader. All rights reserved.
 //
 
-#import "UIView+FrameAccessor.h"
+#import "FrameAccessor.h"
 
-@implementation UIView (FrameAccessor)
+@implementation View (FrameAccessor)
 
 - (CGPoint)origin {
-   return self.frame.origin;
+    return self.frame.origin;
 }
 
 - (void)setOrigin:(CGPoint)newOrigin {
@@ -64,7 +64,7 @@
     return self.frame.size.width;
 }
 
-- (void)setIwdth:(CGFloat)newWidth {
+- (void)setWidth:(CGFloat)newWidth {
     CGRect newFrame = self.frame;
     newFrame.size.width = newWidth;
     self.frame = newFrame;
