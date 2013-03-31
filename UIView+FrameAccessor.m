@@ -6,12 +6,12 @@
 //  Copyright (c) 2012 CoreInvader. All rights reserved.
 //
 
-#import "UIView+FrameAccessor.h"
+#import "FrameAccessor.h"
 
-@implementation UIView (FrameAccessor)
+@implementation NSView (FrameAccessor)
 
 - (CGPoint)origin {
-   return self.frame.origin;
+    return self.frame.origin;
 }
 
 - (void)setOrigin:(CGPoint)newOrigin {

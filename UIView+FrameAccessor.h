@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 CoreInvader. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface UIView (FrameAccessor)
+@interface NSView (FrameAccessor)
 
 - (CGPoint)origin;
 - (void)setOrigin:(CGPoint)newOrigin;
