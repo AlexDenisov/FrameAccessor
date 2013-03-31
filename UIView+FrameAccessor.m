@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 CoreInvader. All rights reserved.
 //
 
-#import "FrameAccessor.h"
+#import "UIView+FrameAccessor.h"
 
 @implementation NSView (FrameAccessor)
 
