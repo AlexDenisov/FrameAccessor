@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.author   = { "holgersindbaek" => "holgersindbaek@gmail.com" }
   s.source   = { :git => 'https://github.com/holgersindbaek/FrameAccessor.git', :tag => s.version.to_s}
   s.platform = :osx
-  s.source_files = 'UIView+FrameAccessor.{h,m}'
+  s.source_files = 'NSView+FrameAccessor.{h,m}'
 end
