@@ -2,6 +2,8 @@
 
 Easy way to access view's frame in iOS and OSX.
 
+![FrameAccessor example](https://github.com/AlexDenisov/FrameAccessor/blob/master/screenshot.png?raw=true).
+
 Use
 
 ```cpp
