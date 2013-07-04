@@ -31,4 +31,7 @@
 - (CGFloat)width;
 - (void)setWidth:(CGFloat)newWidth;
 
+- (CGFloat)bottom;
+- (CGFloat)right;
+
 @end
