@@ -70,12 +70,20 @@
     self.frame = newFrame;
 }
 
-- (CGFloat)bottom {
-    return self.frame.origin.y + self.frame.size.height;
+- (CGFloat)left {
+    return self.x;
 }
 
 - (CGFloat)right {
     return self.frame.origin.x + self.frame.size.width;
+}
+
+- (CGFloat)top {
+    return self.y;
+}
+
+- (CGFloat)bottom {
+    return self.frame.origin.y + self.frame.size.height;
 }
 
 @end
