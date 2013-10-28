@@ -86,4 +86,28 @@
     return self.frame.origin.y + self.frame.size.height;
 }
 
+- (CGFloat)centerX {
+    return self.center.x;
+}
+
+- (void)setCenterX:(CGFloat)newCenterX {
+    self.center.x = newCenterX;
+}
+
+- (CGFloat)centerY {
+    return self.center.y;
+}
+
+- (void)setCenterY:(CGFloat)newCenterY {
+    self.center.y = newCenterY;
+}
+
+- (CGFloat)middleX {
+    return self.width / 2;
+}
+
+- (CGFloat)middleY {
+    return self.height / 2;
+}
+
 @end
