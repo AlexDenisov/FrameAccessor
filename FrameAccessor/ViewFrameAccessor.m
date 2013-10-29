@@ -21,7 +21,6 @@
     return self.frame.origin;
 }
 
-
 - (void)setOrigin:(CGPoint)newOrigin
 {
     CGRect newFrame = self.frame;
@@ -118,9 +117,21 @@
 }
 
 
+- (void)setLeft:(CGFloat)left
+{
+    self.x = left;
+}
+
+
 - (CGFloat)right
 {
     return self.frame.origin.x + self.frame.size.width;
+}
+
+
+- (void)setRight:(CGFloat)right
+{
+    self.x = right - self.width;
 }
 
 
@@ -130,9 +141,21 @@
 }
 
 
+- (void)setTop:(CGFloat)top
+{
+    self.y = top;
+}
+
+
 - (CGFloat)bottom
 {
     return self.frame.origin.y + self.frame.size.height;
+}
+
+
+- (void)setBottom:(CGFloat)bottom
+{
+    self.y = bottom - self.height;
 }
 
 
@@ -167,6 +190,11 @@
 
 
 #pragma mark Middle Point
+
+- (CGPoint)middlePoint
+{
+    return CGPointMake(self.middleX, self.middleY);
+}
 
 - (CGFloat)middleX
 {
