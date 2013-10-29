@@ -2,7 +2,7 @@
 //  main.m
 //  FrameAccessor
 //
-//  Created by Иваненко Дмитрий on 29.10.13.
+//  Created by Ivanenko Dmitry on 29.10.13.
 //  Copyright (c) 2013 Artox Lab. All rights reserved.
 //
 

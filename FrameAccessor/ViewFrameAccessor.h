@@ -15,8 +15,6 @@
 #endif
 
 
-
-
 @interface View (FrameAccessor)
 
 // Frame

@@ -15,8 +15,6 @@
 #endif
 
 
-
-
 @interface ScrollView (FrameAccessor)
 
 // Content Offset
