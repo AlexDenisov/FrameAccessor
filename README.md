@@ -83,7 +83,7 @@ Property | Type | Аvailability
 `middlePoint` | `CGPoint` | **readonly**
 `middleX`, `middleY` | `CGFloat` | **readonly**
 
-`UIScrollView/NSScrollView` properties:
+`UIScrollView` properties:
 
 Property | Type | Аvailability
 --- | --- | ---

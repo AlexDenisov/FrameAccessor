@@ -7,4 +7,7 @@
 //
 
 #import "ViewFrameAccessor.h"
-#import "ScrollViewFrameAccessor.h"
+
+#if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
+    #import "ScrollViewFrameAccessor.h"
+#endif
