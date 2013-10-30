@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'FrameAccessor'
-  s.version  = '1.2.0'
+  s.version  = '1.3.1'
   s.license  = 'MIT'
   s.summary  = 'Easy access to view\'s frame.'
   s.homepage = 'https://github.com/AlexDenisov/FrameAccessor'
@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/AlexDenisov/FrameAccessor.git', :tag => s.version.to_s}
   s.ios.deployment_target = '4.3'
   s.osx.deployment_target = '10.6'
-  s.source_files = 'FrameAccessor/*.{h,m}'
+  s.ios.source_files = 'FrameAccessor/*.{h,m}'
+  s.osx.source_files = 'FrameAccessor/FrameAccessor.h', 'FrameAccessor/ViewFrameAccessor.{h,m}'
 end
