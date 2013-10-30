@@ -9,7 +9,7 @@
 #import "ScrollViewFrameAccessor.h"
 
 
-@implementation ScrollView (FrameAccessor)
+@implementation UIScrollView (FrameAccessor)
 
 #pragma mark Content Offset
 
