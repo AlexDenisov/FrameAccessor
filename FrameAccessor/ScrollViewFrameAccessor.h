@@ -6,16 +6,10 @@
 //  Copyright (c) 2013 Artox Lab. All rights reserved.
 //
 
-#if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
-    #import <UIKit/UIKit.h>
-    #define ScrollView UIScrollView
-#else
-    #import <Foundation/Foundation.h>
-    #define ScrollView NSScrollView
-#endif
+#import <UIKit/UIKit.h>
 
 
-@interface ScrollView (FrameAccessor)
+@interface UIScrollView (FrameAccessor)
 
 // Content Offset
 @property (nonatomic) CGFloat contentOffsetX;
