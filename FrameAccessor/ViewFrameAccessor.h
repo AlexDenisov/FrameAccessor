@@ -6,7 +6,10 @@
 //  Copyright (c) 2013 okolodev.org. All rights reserved.
 //
 
-#if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
+
+#define IS_IOS_DEVICE (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
+
+#if IS_IOS_DEVICE
     #import <UIKit/UIKit.h>
     #define View UIView
 #else
@@ -36,6 +39,9 @@
 @property (nonatomic) CGFloat right;
 
 // Center Point
+#if !IS_IOS_DEVICE
+@property (nonatomic) CGPoint center;
+#endif
 @property (nonatomic) CGFloat centerX;
 @property (nonatomic) CGFloat centerY;
 
