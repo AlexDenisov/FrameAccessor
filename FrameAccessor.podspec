@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'FrameAccessor'
-  s.version  = '1.3.1'
+  s.version  = '1.3.2'
   s.license  = 'MIT'
   s.summary  = 'Easy access to view\'s frame.'
   s.homepage = 'https://github.com/AlexDenisov/FrameAccessor'

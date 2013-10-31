@@ -137,6 +137,19 @@
 
 #pragma mark Center Point
 
+#if !IS_IOS_DEVICE
+- (CGPoint)center
+{
+    return CGPointMake(self.left + self.middleX, self.top + self.middleY);
+}
+
+- (void)setCenter:(CGPoint)newCenter
+{
+    self.left = newCenter.x - self.middleX;
+    self.top = newCenter.y - self.middleY;
+}
+#endif
+
 - (CGFloat)centerX
 {
     return self.center.x;
