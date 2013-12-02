@@ -1,8 +1,8 @@
 language: objective-c
 
 before_install:
-    - sudo gem update --system
-    - sudo gem update cocoapods
+    - gem update --system
+    - gem update cocoapods
 
 script: pod spec lint FrameAccessor.podspec
 
