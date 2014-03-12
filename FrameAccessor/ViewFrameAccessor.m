@@ -13,24 +13,24 @@
 
 #pragma mark Frame
 
-- (CGPoint)origin
+- (CGPoint)viewOrigin
 {
     return self.frame.origin;
 }
 
-- (void)setOrigin:(CGPoint)newOrigin
+- (void)setViewOrigin:(CGPoint)newOrigin
 {
     CGRect newFrame = self.frame;
     newFrame.origin = newOrigin;
     self.frame = newFrame;
 }
 
-- (CGSize)size
+- (CGSize)viewSize
 {
     return self.frame.size;
 }
 
-- (void)setSize:(CGSize)newSize
+- (void)setViewSize:(CGSize)newSize
 {
     CGRect newFrame = self.frame;
     newFrame.size = newSize;
