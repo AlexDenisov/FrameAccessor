@@ -74,14 +74,17 @@ view.frame = newFrame;
 
 Property | Type | Аvailability
 --- | --- | ---
-`origin` | `CGPoint` | *readwrite*
-`size` | `CGSize` | *readwrite*
+`viewOrigin` | `CGPoint` | *readwrite*
+`viewSize` | `CGSize` | *readwrite*
 `x`, `y` | `CGFloat` | *readwrite*
 `width`, `height` | `CGFloat` | *readwrite*
 `top`, `left`, `bottom`, `right` | `CGFloat` | *readwrite*
 `centerX`, `centerY` | `CGFloat` | *readwrite*
 `middlePoint` | `CGPoint` | **readonly**
 `middleX`, `middleY` | `CGFloat` | **readonly**
+
+__Note:__ the names of @viewOrigin and @viewSize properties are prefixed with `view` to not create conflicts with Apple's private internals (As discussed in [#7](https://github.com/AlexDenisov/FrameAccessor/issues/7)).
+
 
 `UIScrollView` properties:
 

@@ -21,8 +21,8 @@
 @interface View (FrameAccessor)
 
 // Frame
-@property (nonatomic) CGPoint origin;
-@property (nonatomic) CGSize size;
+@property (nonatomic) CGPoint viewOrigin;
+@property (nonatomic) CGSize viewSize;
 
 // Frame Origin
 @property (nonatomic) CGFloat x;
