@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 okolodev.org. All rights reserved.
 //
 
-#import "ViewFrameAccessor.h"
+#import <FrameAccessor/ViewFrameAccessor.h>
 
 #if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
-    #import "ScrollViewFrameAccessor.h"
+    #import <FrameAccessor/ScrollViewFrameAccessor.h>
 #endif
