@@ -10,6 +10,10 @@ Easy way to access view's frame in iOS and OSX.
 
 ## Installation
 
+### Manual Install (preferred method)
+
+Download framework for [iOS](https://github.com/AlexDenisov/FrameAccessor/releases/download/2.0/FrameAccessor-iOS-2.0.zip) or for [OS X](https://github.com/AlexDenisov/FrameAccessor/releases/download/2.0/FrameAccessor-OSX-2.0.zip) target and drag'n'drop into your project
+
 ### CocoaPods
 
 The recommended approach for installating `FrameAccessor` is via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation.
@@ -49,10 +53,6 @@ $ open MyProject.xcworkspace
 ```
 
 Please note that if your installation fails, it may be because you are installing with a version of Git lower than CocoaPods is expecting. Please ensure that you are running Git >= **1.8.0** by executing `git --version`. You can get a full picture of the installation details by executing `pod install --verbose`.
-
-### Manual Install
-
-All you need to do is drop `FrameAccessor` files into your project, and add `#include "FrameAccessor.h"` to the top of files that will use it.
 
 ## Example Usage
 
