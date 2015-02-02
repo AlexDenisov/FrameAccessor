@@ -82,8 +82,10 @@ Property | Type | Аvailability
 `centerX`, `centerY` | `CGFloat` | *readwrite*
 `middlePoint` | `CGPoint` | **readonly**
 `middleX`, `middleY` | `CGFloat` | **readonly**
+`topLeftPoint`, `topRightPoint` | `CGFloat` | **readonly**
+`bottomLeftPoint`, `bottomRightPoint` | `CGFloat` | **readonly**
 
-__Note:__ the names of @viewOrigin and @viewSize properties are prefixed with `view` to not create conflicts with Apple's private internals (As discussed in [#7](https://github.com/AlexDenisov/FrameAccessor/issues/7)).
+__Note:__ the names of @viewOrigin and @viewSize properties are prefixed with `view` to not create conflicts with Apple's private internals (As discussed in [#7](https://github.com/AlexDenisov/FrameAccessor/issues/7)). @topLeftPoint,@topRightPoint,@bottomLeftPoint,@bottomRightPoint,You can use them and cooperate with the UIBezierPath curve draw any view of the borders, in the custom view ```objective-c - (void) drawRect: (CGRect) ``` the rect method
 
 
 `UIScrollView` properties:
