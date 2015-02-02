@@ -82,6 +82,8 @@ Property | Type | Аvailability
 `centerX`, `centerY` | `CGFloat` | *readwrite*
 `middlePoint` | `CGPoint` | **readonly**
 `middleX`, `middleY` | `CGFloat` | **readonly**
+`topLeftPoint`,`topRightPoint` | `CGPoint` | **readonly**
+`bottomLeftPoint`,`bottomRightPoint` | `CGPoint` | **readonly**
 
 __Note:__ the names of @viewOrigin and @viewSize properties are prefixed with `view` to not create conflicts with Apple's private internals (As discussed in [#7](https://github.com/AlexDenisov/FrameAccessor/issues/7)).
 
