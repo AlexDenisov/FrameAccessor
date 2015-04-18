@@ -87,4 +87,16 @@
     XCTAssertEqual(view.frame.size.height, 40);
 }
 
+- (void)testGetTop {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.top, 2);
+}
+
+- (void)testSetTop {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.top = 0;
+    XCTAssertEqual(view.top, 0);
+    XCTAssertEqual(view.top, CGRectGetMinY(view.frame));
+}
+
 @end
