@@ -68,7 +68,7 @@
 		46D365D119471C90005B8F7D /* FrameAccessor-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrameAccessor-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		46D365D219471C90005B8F7D /* FrameAccessor_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameAccessor_iOS.h; sourceTree = "<group>"; };
 		46D365D319471C90005B8F7D /* FrameAccessor_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameAccessor_iOS.m; sourceTree = "<group>"; };
-		46D365E219471DF3005B8F7D /* FrameAccessor-OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "FrameAccessor-OSX.framework"; path = FrameAccessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D365E219471DF3005B8F7D /* FrameAccessor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameAccessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D365E319471DF3005B8F7D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		46D365E619471DF3005B8F7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		46D365E719471DF3005B8F7D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -141,7 +141,7 @@
 			children = (
 				198C9BF4181F92E70021C1C7 /* FrameAccessor.app */,
 				46D365CA19471C90005B8F7D /* FrameAccessor.framework */,
-				46D365E219471DF3005B8F7D /* FrameAccessor-OSX.framework */,
+				46D365E219471DF3005B8F7D /* FrameAccessor.framework */,
 				E0D90D801AE2EC8500266F3F /* FrameAccessorTests.xctest */,
 			);
 			name = Products;
@@ -353,7 +353,7 @@
 			);
 			name = "FrameAccessor-OSX";
 			productName = "FrameAccessor-OSX";
-			productReference = 46D365E219471DF3005B8F7D /* FrameAccessor-OSX.framework */;
+			productReference = 46D365E219471DF3005B8F7D /* FrameAccessor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E0D90D7F1AE2EC8500266F3F /* FrameAccessorTests */ = {
@@ -403,8 +403,8 @@
 			targets = (
 				198C9BF3181F92E70021C1C7 /* FrameAccessor */,
 				46D365C919471C90005B8F7D /* FrameAccessor-iOS */,
-				46D365E119471DF3005B8F7D /* FrameAccessor-OSX */,
 				E0D90D7F1AE2EC8500266F3F /* FrameAccessorTests */,
+				46D365E119471DF3005B8F7D /* FrameAccessor-OSX */,
 			);
 		};
 /* End PBXProject section */
@@ -922,6 +922,7 @@
 				E0D90D891AE2EC8500266F3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

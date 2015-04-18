@@ -1,40 +1,58 @@
-//
-//  FrameAccessorTests.m
-//  FrameAccessorTests
-//
-//  Created by Ayaka Nonaka on 4/18/15.
-//  Copyright (c) 2015 Artox Lab. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <FrameAccessor/FrameAccessor.h>
 
 @interface FrameAccessorTests : XCTestCase
-
 @end
 
 @implementation FrameAccessorTests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (void)testGetX {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.x, 1);
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+- (void)testGetY {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.y, 2);
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testGetWidth {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.width, 3);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testGetHeight {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.height, 4);
+}
+
+- (void)testSetX {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.x = 10;
+    XCTAssertEqual(view.x, 10);
+    XCTAssertEqual(view.frame.origin.x, 10);
+}
+
+- (void)testSetY {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.y = 20;
+    XCTAssertEqual(view.y, 20);
+    XCTAssertEqual(view.frame.origin.y, 20);
+}
+
+- (void)testSetWidth {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.width = 30;
+    XCTAssertEqual(view.width, 30);
+    XCTAssertEqual(view.frame.size.width, 30);
+}
+
+- (void)testSetHeight {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.height = 40;
+    XCTAssertEqual(view.height, 40);
+    XCTAssertEqual(view.frame.size.height, 40);
 }
 
 @end
