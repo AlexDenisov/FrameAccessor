@@ -199,4 +199,28 @@
     XCTAssertEqual(scrollView.contentOffset.y, 5);
 }
 
+- (void)testGetContentSizeWidth {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    XCTAssertEqual(scrollView.contentSizeWidth, 0);
+}
+
+- (void)testSetContentSizeWidth {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    scrollView.contentSizeWidth = 5;
+    XCTAssertEqual(scrollView.contentSizeWidth, 5);
+    XCTAssertEqual(scrollView.contentSize.width, 5);
+}
+
+- (void)testGetContentSizeHeight {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    XCTAssertEqual(scrollView.contentSizeWidth, 0);
+}
+
+- (void)testSetContentSizeHeight {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    scrollView.contentSizeHeight = 5;
+    XCTAssertEqual(scrollView.contentSizeHeight, 5);
+    XCTAssertEqual(scrollView.contentSize.height, 5);
+}
+
 @end
