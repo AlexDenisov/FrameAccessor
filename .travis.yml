@@ -1,8 +1,10 @@
 language: objective-c
+podfile: Examples/Podfile
 
 before_install:
-    - gem update --system
-    - gem update cocoapods
+- gem i cocoapods --no-ri --no-rdoc
+- gem i xcpretty  --no-ri --no-rdoc
 
-script: pod spec lint FrameAccessor.podspec
-
+script:
+- set -o pipefail && xcodebuild -workspace Examples/FrameAccessor.xcworkspace -scheme FrameAccessor -sdk iphonesimulator test | xcpretty -c
+- pod lib lint FrameAccessor.podspec
