@@ -96,7 +96,31 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
     view.top = 0;
     XCTAssertEqual(view.top, 0);
-    XCTAssertEqual(view.top, CGRectGetMinY(view.frame));
+    XCTAssertEqual(CGRectGetMinY(view.frame), 0);
+}
+
+- (void)testGetLeft {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.left, 1);
+}
+
+- (void)testSetLeft {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.left = 0;
+    XCTAssertEqual(view.left, 0);
+    XCTAssertEqual(CGRectGetMinX(view.frame), 0);
+}
+
+- (void)testGetBottom {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.bottom, 6);
+}
+
+- (void)testSetBottom {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.bottom = 10;
+    XCTAssertEqual(view.bottom, 10);
+    XCTAssertEqual(CGRectGetMaxY(view.frame), 10);
 }
 
 @end
