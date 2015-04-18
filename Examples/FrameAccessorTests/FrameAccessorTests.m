@@ -223,4 +223,52 @@
     XCTAssertEqual(scrollView.contentSize.height, 5);
 }
 
+- (void)testGetContentInsetTop {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    XCTAssertEqual(scrollView.contentInsetTop, 0);
+}
+
+- (void)testSetContentInsetTop {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    scrollView.contentInsetTop = 5;
+    XCTAssertEqual(scrollView.contentInsetTop, 5);
+    XCTAssertEqual(scrollView.contentInset.top, 5);
+}
+
+- (void)testGetContentInsetLeft {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    XCTAssertEqual(scrollView.contentInsetLeft, 0);
+}
+
+- (void)testSetContentInsetLeft {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    scrollView.contentInsetLeft = 5;
+    XCTAssertEqual(scrollView.contentInsetLeft, 5);
+    XCTAssertEqual(scrollView.contentInset.left, 5);
+}
+
+- (void)testGetContentInsetBottom {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    XCTAssertEqual(scrollView.contentInsetBottom, 0);
+}
+
+- (void)testSetContentInsetBottom {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    scrollView.contentInsetBottom = 5;
+    XCTAssertEqual(scrollView.contentInsetBottom, 5);
+    XCTAssertEqual(scrollView.contentInset.bottom, 5);
+}
+
+- (void)testGetContentInsetRight {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    XCTAssertEqual(scrollView.contentInsetRight, 0);
+}
+
+- (void)testSetContentInsetRight {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    scrollView.contentInsetRight = 5;
+    XCTAssertEqual(scrollView.contentInsetRight, 5);
+    XCTAssertEqual(scrollView.contentInset.right, 5);
+}
+
 @end
