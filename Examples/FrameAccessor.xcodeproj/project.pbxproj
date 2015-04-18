@@ -28,6 +28,7 @@
 		46D3660F19471E17005B8F7D /* ViewFrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 198C9C1E181F932C0021C1C7 /* ViewFrameAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46D3661919472295005B8F7D /* ScrollViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 198C9C1D181F932C0021C1C7 /* ScrollViewFrameAccessor.m */; };
 		46D3661A194722A3005B8F7D /* ScrollViewFrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 198C9C1C181F932C0021C1C7 /* ScrollViewFrameAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E00437251AE3178B00C616DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00437241AE3178B00C616DB /* Images.xcassets */; };
 		E0D90D851AE2EC8500266F3F /* FrameAccessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D90D841AE2EC8500266F3F /* FrameAccessorTests.m */; };
 		F75A53CE6007E0B93A9F67C7 /* libPods-FrameAccessor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4672FB4025732642E318AD2B /* libPods-FrameAccessor.a */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		46D365F119471DF3005B8F7D /* FrameAccessor_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameAccessor_OSX.m; sourceTree = "<group>"; };
 		46D365F819471DF3005B8F7D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		478D0DB65C02FB20F28C121A /* Pods-FrameAccessor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameAccessor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameAccessor/Pods-FrameAccessor.debug.xcconfig"; sourceTree = "<group>"; };
+		E00437241AE3178B00C616DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E0A2062C6B33159386456968 /* Pods-FrameAccessor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameAccessor.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameAccessor/Pods-FrameAccessor.release.xcconfig"; sourceTree = "<group>"; };
 		E0D90D801AE2EC8500266F3F /* FrameAccessorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameAccessorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D90D831AE2EC8500266F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				198C9C0F181F92E70021C1C7 /* ViewController.h */,
 				198C9C10181F92E70021C1C7 /* ViewController.m */,
 				198C9C12181F92E70021C1C7 /* ViewController.xib */,
+				E00437241AE3178B00C616DB /* Images.xcassets */,
 				198C9BFE181F92E70021C1C7 /* Supporting Files */,
 			);
 			path = FrameAccessor;
@@ -414,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00437251AE3178B00C616DB /* Images.xcassets in Resources */,
 				198C9C02181F92E70021C1C7 /* InfoPlist.strings in Resources */,
 				198C9C14181F92E70021C1C7 /* ViewController.xib in Resources */,
 			);
@@ -635,6 +639,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 478D0DB65C02FB20F28C121A /* Pods-FrameAccessor.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FrameAccessor/FrameAccessor-Prefix.pch";
 				INFOPLIST_FILE = "FrameAccessor/FrameAccessor-Info.plist";
@@ -648,6 +654,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0A2062C6B33159386456968 /* Pods-FrameAccessor.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FrameAccessor/FrameAccessor-Prefix.pch";
 				INFOPLIST_FILE = "FrameAccessor/FrameAccessor-Info.plist";
