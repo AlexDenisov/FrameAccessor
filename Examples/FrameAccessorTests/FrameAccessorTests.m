@@ -147,4 +147,16 @@
     XCTAssertEqual(CGRectGetMidX(view.frame), 10);
 }
 
+- (void)testGetCenterY {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.centerY, 4);
+}
+
+- (void)testSetCenter {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.centerY = 10;
+    XCTAssertEqual(view.centerY, 10);
+    XCTAssertEqual(CGRectGetMidY(view.frame), 10);
+}
+
 @end
