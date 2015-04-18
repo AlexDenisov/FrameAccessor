@@ -23,6 +23,22 @@
     XCTAssertEqual(view.frame.origin.y, 20);
 }
 
+- (void)testGetViewSize {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    CGSize viewSize = view.viewSize;
+    XCTAssertEqual(viewSize.width, 3);
+    XCTAssertEqual(viewSize.height, 4);
+}
+
+- (void)testSetViewSize {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.viewSize = CGSizeMake(30, 40);
+    XCTAssertEqual(view.viewSize.width, 30);
+    XCTAssertEqual(view.viewSize.height, 40);
+    XCTAssertEqual(view.frame.size.width, 30);
+    XCTAssertEqual(view.frame.size.height, 40);
+}
+
 - (void)testGetX {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
     XCTAssertEqual(view.x, 1);
