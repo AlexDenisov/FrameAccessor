@@ -175,4 +175,28 @@
     XCTAssertEqual(view.middleY, 2);
 }
 
+- (void)testGetContentOffsetX {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    XCTAssertEqual(scrollView.contentOffsetX, 0);
+}
+
+- (void)testSetContentOffsetX {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    scrollView.contentOffsetX = 5;
+    XCTAssertEqual(scrollView.contentOffsetX, 5);
+    XCTAssertEqual(scrollView.contentOffset.x, 5);
+}
+
+- (void)testGetContentOffsetY {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    XCTAssertEqual(scrollView.contentOffsetY, 0);
+}
+
+- (void)testSetContentOffsetY {
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    scrollView.contentOffsetY = 5;
+    XCTAssertEqual(scrollView.contentOffsetY, 5);
+    XCTAssertEqual(scrollView.contentOffset.y, 5);
+}
+
 @end
