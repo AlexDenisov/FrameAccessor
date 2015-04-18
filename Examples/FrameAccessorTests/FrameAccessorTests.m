@@ -123,4 +123,16 @@
     XCTAssertEqual(CGRectGetMaxY(view.frame), 10);
 }
 
+- (void)testGetRight {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    XCTAssertEqual(view.right, 4);
+}
+
+- (void)testSetRight {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(1, 2, 3, 4)];
+    view.right = 10;
+    XCTAssertEqual(view.right, 10);
+    XCTAssertEqual(CGRectGetMaxX(view.frame), 10);
+}
+
 @end
