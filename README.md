@@ -1,5 +1,7 @@
 # FrameAccessor
 
+[![Build Status](https://travis-ci.org/AlexDenisov/FrameAccessor.svg?branch=master)](https://travis-ci.org/AlexDenisov/FrameAccessor)
+
 Easy way to access view's frame in iOS and OSX.
 
 ## Compatibility
