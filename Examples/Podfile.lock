@@ -1,0 +1,14 @@
+PODS:
+  - FrameAccessor (2.0)
+
+DEPENDENCIES:
+  - FrameAccessor (from `..`)
+
+EXTERNAL SOURCES:
+  FrameAccessor:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
+
+COCOAPODS: 0.36.4
