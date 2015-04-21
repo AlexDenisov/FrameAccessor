@@ -2,9 +2,12 @@ language: objective-c
 podfile: Examples/Podfile
 
 before_install:
+- gem install slather --no-rdoc --no-ri --no-document --quiet
 - gem i cocoapods --no-ri --no-rdoc
 - gem i xcpretty  --no-ri --no-rdoc
 
 script:
 - set -o pipefail && xcodebuild -workspace Examples/FrameAccessor.xcworkspace -scheme FrameAccessor -sdk iphonesimulator test | xcpretty -c
 - pod lib lint FrameAccessor.podspec
+
+after_success: slather

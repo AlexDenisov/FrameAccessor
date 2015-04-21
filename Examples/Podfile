@@ -1,7 +1,7 @@
+plugin 'slather'
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, "4.3"
 
 target "FrameAccessor" do
   pod 'FrameAccessor', :path => '..'
 end
-
