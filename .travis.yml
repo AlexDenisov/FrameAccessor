@@ -2,9 +2,13 @@ language: objective-c
 podfile: Examples/Podfile
 
 before_install:
+- gem install activesupport -N
+- gem install slather --no-rdoc
 - gem i cocoapods --no-ri --no-rdoc
 - gem i xcpretty  --no-ri --no-rdoc
 
-script:
-- set -o pipefail && xcodebuild -workspace Examples/FrameAccessor.xcworkspace -scheme FrameAccessor -sdk iphonesimulator test | xcpretty -c
-- pod lib lint FrameAccessor.podspec
+xcode_workspace: Examples/FrameAccessor.xcworkspace
+xcode_scheme: FrameAccessor
+xcode_sdk: iphonesimulator
+
+after_success: slather
