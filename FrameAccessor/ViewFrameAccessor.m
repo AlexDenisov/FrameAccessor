@@ -188,4 +188,26 @@
     return self.height / 2;
 }
 
+#pragma mark View Point
+
+- (CGPoint)topLeftPoint
+{
+    return CGPointMake(self.x, self.y);
+}
+
+- (CGPoint)topRightPoint
+{
+    return CGPointMake(self.x + self.width, self.y);
+}
+
+- (CGPoint)bottomLeftPoint
+{
+    return CGPointMake(self.x, self.y + self.height);
+}
+
+- (CGPoint)bottomRightPoint
+{
+    return CGPointMake(self.x + self.width, self.y + self.height);
+}
+
 @end
