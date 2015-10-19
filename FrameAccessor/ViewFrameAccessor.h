@@ -7,6 +7,8 @@
 //
 
 
+#import "TargetConditionals.h"
+
 #define IS_IOS_DEVICE (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
 
 #if IS_IOS_DEVICE
