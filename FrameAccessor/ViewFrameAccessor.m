@@ -42,7 +42,7 @@
 
 - (CGFloat)x
 {
-    return self.frame.origin.x;
+    return CGRectGetMinX(self.frame);
 }
 
 - (void)setX:(CGFloat)newX
@@ -54,7 +54,7 @@
 
 - (CGFloat)y
 {
-    return self.frame.origin.y;
+    return CGRectGetMinY(self.frame);
 }
 
 - (void)setY:(CGFloat)newY
@@ -69,7 +69,7 @@
 
 - (CGFloat)height
 {
-    return self.frame.size.height;
+    return CGRectGetHeight(self.frame);
 }
 
 - (void)setHeight:(CGFloat)newHeight
@@ -81,7 +81,7 @@
 
 - (CGFloat)width
 {
-    return self.frame.size.width;
+    return CGRectGetWidth(self.frame);
 }
 
 - (void)setWidth:(CGFloat)newWidth
@@ -106,7 +106,7 @@
 
 - (CGFloat)right
 {
-    return self.frame.origin.x + self.frame.size.width;
+    return CGRectGetMaxX(self.frame);
 }
 
 - (void)setRight:(CGFloat)right
@@ -126,7 +126,7 @@
 
 - (CGFloat)bottom
 {
-    return self.frame.origin.y + self.frame.size.height;
+    return CGRectGetMaxY(self.frame);
 }
 
 - (void)setBottom:(CGFloat)bottom
@@ -180,12 +180,12 @@
 
 - (CGFloat)middleX
 {
-    return self.width / 2;
+    return CGRectGetMidX(self.bounds);
 }
 
 - (CGFloat)middleY
 {
-    return self.height / 2;
+    return CGRectGetMidY(self.bounds);
 }
 
 @end
