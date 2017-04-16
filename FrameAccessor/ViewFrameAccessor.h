@@ -50,4 +50,10 @@
 @property (nonatomic, readonly) CGFloat middleX;
 @property (nonatomic, readonly) CGFloat middleY;
 
+// View Point
+@property (nonatomic, readonly) CGPoint topLeftPoint;
+@property (nonatomic, readonly) CGPoint topRightPoint;
+@property (nonatomic, readonly) CGPoint bottomLeftPoint;
+@property (nonatomic, readonly) CGPoint bottomRightPoint;
+
 @end
